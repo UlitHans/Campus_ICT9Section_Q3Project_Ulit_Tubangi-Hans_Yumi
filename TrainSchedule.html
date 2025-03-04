@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrenPH</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+body{background-color:#d9d9d9;}
+.navbar-custom{background-color:#004aad !important;}
+.nav-link{color:white !important;}
+.logo{height:40px;margin-right:10px;}
+.brand-text{color:white;font-weight:bold;font-family:Arial,sans-serif;}
+.search-input{border:none;padding:6px 12px;border-radius:50px;outline:none;margin-left:40px;margin-right:10px;width:250px;}
+.search-button{background-color:red;color:white;border:none;padding:6px 12px;border-radius:50px;width:120px;}
+.search-input,.search-button,.nav-link{transition:all 0.3s ease;}
+
+@media (max-width:768px){.search-input{display:none;}.search-button{display:none;}.nav-link{font-size:0.9rem;}}
+.center-text{display:flex;justify-content:center;align-items:flex-start;height:20vh;margin-top:20px;flex-direction:column;align-items:center;}
+.center-text h1{background-color:white;color:black;padding:10px 160px;font-size:1rem;font-weight:300;}
+.center-text p{color:black;text-align:center;margin-top:10px;font-size:0.8rem;margin-bottom:5px;}
+.schedule-table{margin:5px auto;width:60%;background-color:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 8px rgba(0,0,0,0.1);}
+.schedule-table th,.schedule-table td{padding:8px 12px;text-align:center;}
+.schedule-table th{background-color:rgb(141,141,141);color:white;}
+
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+<div class="container-fluid">
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="zut-removebg-preview.png" alt="Logo" class="logo">
+<span class="brand-text">TrenPH</span>
+</a>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav me-auto">
+<li class="nav-item">
+<a class="nav-link" href="index.html" style="color:white;">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="TrainSchedule.html" style="color:white;">Train Schedule</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="Help.html" style="color:white;">Help</a>
+
+</li>
+</ul>
+<form class="d-flex ms-auto">
+<input type="text" class="search-input" placeholder="type here..." aria-label="Search">
+<button type="submit" class="search-button">Search</button>
+</form>
+</div>
+</div>
+</nav>
+
+<div class="center-text">
+<h1>TRAIN SCHEDULE</h1>
+<p>The MRT train schedule remains fairly consistent, except when there are technical issues.</p>
+</div>
+
+<table class="table schedule-table">
+<thead>
+<tr>
+<th>Day</th>
+<th>Operating Hours (North Ave.)</th>
+<th>Operating Hours (Taft)</th>
+</tr>
+
+</thead>
+<tbody>
+<tr><td>Monday</td><td>4:59 AM – 9:10 PM</td><td>5:50 AM – 10:10 PM</td></tr>
+<tr><td>Tuesday</td><td>4:59 AM – 9:10 PM</td><td>5:50 AM – 10:10 PM</td></tr>
+<tr><td>Wednesday</td><td>4:59 AM – 9:10 PM</td><td>5:50 AM – 10:10 PM</td></tr>
+<tr><td>Thursday</td><td>4:59 AM – 9:30 PM</td><td>5:50 AM – 10:10 PM</td></tr>
+<tr><td>Friday</td><td>4:59 AM – 9:30 PM</td><td>5:50 AM – 10:10 PM</td></tr>
+<tr><td>Saturday</td><td>4:59 AM – 9:10 PM</td><td>5:51 AM – 10:01 PM</td></tr>
+<tr><td>Sunday</td><td>4:59 AM – 9:30 PM</td><td>5:51 AM – 10:01 PM</td></tr>
+</tbody>
+</table>
+
+
+</body>
+</html>

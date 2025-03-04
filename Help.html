@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrenPH</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+background-color: #d9d9d9;
+}
+.navbar-custom {
+background-color: #004aad !important;
+}
+.nav-link {
+color: white !important;
+}
+.logo {
+height: 40px;
+margin-right: 10px;
+}
+.brand-text {
+color: white;
+font-weight: bold;
+font-family: Arial, sans-serif;
+}
+.search-input {
+border: none;
+padding: 6px 12px;
+border-radius: 50px;
+outline: none;
+margin-left: 40px;
+margin-right: 10px;
+width: 250px;
+}
+.search-button {
+background-color: red;
+color: white;
+border: none;
+padding: 6px 12px;
+border-radius: 50px;
+width: 120px;
+}
+.search-input,
+.search-button,
+.nav-link {
+transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+.search-input {
+display: none;
+}
+.search-button {
+display: none;
+}
+.nav-link {
+font-size: 0.9rem;
+}
+}
+.center-text {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+height: 20vh;
+margin-top: 20px;
+flex-direction: column;
+align-items: center;
+}
+.center-text h1 {
+background-color: white;
+color: black;
+padding: 10px 160px;
+font-size: 1rem;
+font-weight: 300;
+}
+.center-text p {
+color: black;
+text-align: center;
+margin-top: 10px;
+font-size: 0.8rem;
+margin-bottom: 5px;
+}
+.feedback-container {
+max-width: 400px;
+margin: 10px auto;
+background-color: white;
+padding: 15px;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.feedback-container h2 {
+text-align: center;
+color: #004aad;
+margin-bottom: 15px;
+}
+.feedback-container input,
+.feedback-container textarea {
+width: 100%;
+padding: 8px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-sizing: border-box;
+}
+.submit-button {
+width: 100%;
+padding: 8px;
+background-color: red;
+color: white;
+border: none;
+border-radius: 50px;
+font-size: 0.9rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+background-color: #cc0000;
+}
+</style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom">
+<div class="container-fluid">
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="zut-removebg-preview.png" alt="Logo" class="logo">
+<span class="brand-text">TrenPH</span>
+</a>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav me-auto">
+<li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="TrainSchedule.html" style="color: white;">Train Schedule</a></li>
+<li class="nav-item"><a class="nav-link" href="Help.html" style="color: white;">Help</a></li>
+</ul>
+
+<form class="d-flex ms-auto">
+<input type="text" class="search-input" placeholder="type here..." aria-label="Search">
+<button type="submit" class="search-button">Search</button>
+</form>
+</div>
+</div>
+</nav>
+
+<div class="center-text">
+<h1>Leave a Comment</h1>
+<p>We value your feedback. Talk to us.</p>
+</div>
+
+<div class="feedback-container">
+<h2>Feedback Form</h2>
+<form action="#" method="post">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Feedback" rows="4" required></textarea>
+<button type="submit" class="submit-button">Submit Feedback</button>
+</form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<br>
+
+<center>
+<div style="background-color: rgb(141, 141, 141); color: white;">
+    <p>ulit.hb@obmontessori.edu.ph     tubangi.lu@obmontessori.edu.ph <br> 9 - Sapphire  OB Montessori Center    </p>
+</center>
+</div>
+</body>
+
+</html>
